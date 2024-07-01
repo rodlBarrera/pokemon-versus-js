@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .pokemon-logo {
+    width: 8em;
+}
+
+header .versus-icon {
+    width: 3em;
+}
+
+#pokemons-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 3em 0;
+}
+
+#pokemons-selected .pokemon-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#pokemons-selected .pokemon-card .pokemon-img {
+    width: 50%;
+    height: auto;
+}
+
+#pokemons-selected .pokemon-card .pokemon-name {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#pokemons-selected .versus {
+    width: 15%;
+    height: auto;
+}
+
+#pokemon-battle, #pokemon-winner {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#pokemon-battle p {
+    padding: .5em 2em;
+    border-left-width: .5em;
+    border-left-style: solid;
+    margin-bottom: .5em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#pokemon-battle p.grass {
+    border-left-color: #00c500;
+}
+
+#pokemon-battle p.fire {
+    border-left-color: #ff7b00;
+}
+
+#pokemon-battle p.water {
+    border-left-color: #05affd;
+}
+
+#pokemon-battle p.electric {
+    border-left-color: #e9d200;
+}
+
+#pokemon-battle p.ground {
+    border-left-color: #7a6d65;
+}
+
+#pokemon-winner p {
+    font-size: 2em;
+    text-align: center;
+}
+
+#pokemon-winner p span{
+    font-size: 3em;
+    font-weight: 800;
+}
